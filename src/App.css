@@ -1,0 +1,143 @@
+.page-box {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.page-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.event-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.form-box input,
+.form-box textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form-box textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-box button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-box button:hover {
+  background: #e68900;
+}
+
+/* Ensure full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flex layout for footer stability */
+.App {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content expands to push footer down */
+main {
+  flex: 1;
+}
+
+/* Footer styling (same as before) */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+/* Ensure the app takes full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox layout to keep footer stable */
+.App {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* This part grows with the page */
+main {
+  flex: 1;
+}
+
+/* Footer styling */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* full screen height */
+}
+
+.content {
+  flex: 1;            /* this pushes footer down */
+  padding: 20px;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  width: 100%;
+  margin-top: auto;   /* ensures footer is always at bottom */
+}
+
+
+.event-card:hover {
+  background: #f0f0f0;
+  transform: scale(1.02);
+}

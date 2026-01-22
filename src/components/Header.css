@@ -1,0 +1,25 @@
+.header {
+  background: #222;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.header ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header ul li a:hover,
+.header ul li a.active {
+  color: #ff9800;
+}
